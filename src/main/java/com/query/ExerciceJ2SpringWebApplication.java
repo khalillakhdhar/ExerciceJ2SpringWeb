@@ -25,26 +25,26 @@ CasRepository cases;
 
 	@Override
 	public void run(String... args) throws Exception {
-		cases.save(new Cas("teste1", "20999888", "New york USA", 1, 22));
-		cases.save(new Cas("GWB", "22994455", "Toronto Canada", -1, 01));
-		cases.save(new Cas("Ali express", "02994455", "Atalanta USA", -1, 22));
-		List<Cas> covids=cases.findEveryone();
-		System.out.println("la liste des cas trié par nom");
-		showListCas(covids);
-		List<Cas> selected=cases.findByAdresseContaining("USA");
-		System.out.println("liste des cas aux état unis");
-		showListCas(selected);
-		List<Cas> testPos=cases.filtreCas();
-		System.out.println("---la liste des cas positifs!---");
-		showListCas(testPos);
-		List<Cas> CasparRegion=cases.findByEtatAndCodePostale(1, 22);
-		System.out.println("liste des cas + dans le 22");
-		showListCas(CasparRegion);
-		
+//		cases.save(new Cas("teste1", "20999888", "New york USA", 1, 22));
+//		cases.save(new Cas("GWB", "22994455", "Toronto Canada", -1, 01));
+//		cases.save(new Cas("Ali express", "02994455", "Atalanta USA", -1, 22));
+//		List<Cas> covids=cases.findEveryone();
+//		System.out.println("la liste des cas trié par nom");
+//		showListCas(covids);
+//		List<Cas> selected=cases.findByAdresseContaining("USA");
+//		System.out.println("liste des cas aux état unis");
+//		showListCas(selected);
+//		List<Cas> testPos=cases.filtreCas();
+//		System.out.println("---la liste des cas positifs!---");
+//		showListCas(testPos);
+//		List<Cas> CasparRegion=cases.findByEtatAndCodePostale(1, 22);
+//		System.out.println("liste des cas + dans le 22");
+//		showListCas(CasparRegion);
+//		
 		// TODO Auto-generated method stub
-//		articleService.saveArticle(new Article("12/1/2021", "Kim jung", false, "l'art de programmation java","programmation"));
-//		articleService.saveArticle(new Article("10/11/2020", "mark zukerburg", true, "marketing digitale et programmation web","E-learning"));
-//		articleService.saveArticle(new Article("14/4/2019", "pivotal team", true, "java les bases et les premier pas ","programmation"));
+		articleService.saveArticle(new Article("12/1/2021", "Kim jung", false, "l'art de programmation java","programmation"));
+		articleService.saveArticle(new Article("10/11/2020", "mark zukerburg", true, "marketing digitale et programmation web","E-learning"));
+		articleService.saveArticle(new Article("14/4/2019", "pivotal team", true, "java les bases et les premier pas ","programmation"));
 //		List<Article> publishedList=articleService.filtrePublication();
 //		showList(publishedList);
 //		System.out.println("liste des article de pivotal team");

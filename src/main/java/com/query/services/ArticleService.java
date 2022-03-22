@@ -41,6 +41,11 @@ public class ArticleService {
 	{
 		return articleRepo.findByPublicationTrue();
 	}
+	public List<Article> filtertypeorauth(String type, String author)
+	{
+		return articleRepo.findByTypeOrAuteur(type,author);
+	}
+	
 	public List<Article> searchJava()
 	{
 		return articleRepo.findJava();
